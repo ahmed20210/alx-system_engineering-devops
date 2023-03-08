@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1aQd ./* | sed -e 's/^/"/' -e 's/"/,/' -e 's/\/,/"\//' -e '1s/^/.\n..\n/' | LC_ALL=C sort --ignore-case --field-separator='/' --key=1.1n,1.1 -k 1.2

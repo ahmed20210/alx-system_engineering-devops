@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la > file_name
+cat /etc/passwd /etc/hosts

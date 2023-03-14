@@ -1,2 +1,2 @@
 #!/bin/bash
-[chr(i) + chr(j) for i in range(97, 123) for j in range(97, 123) if i != 111 or j != 111]
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" 

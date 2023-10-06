@@ -41,7 +41,7 @@ frontend sharabash.tech-http-frontend
 
 
 frontend  sharabash.tech-https-frontend
-	bind *:443 ssl crt  /etc/letsencrypt/live/www.sharabash.tech/fullchain.pem
+	bind *:443 ssl crt  /etc/letsencrypt/live/www.sharabash.tech/www.sharabash.tech.pem
 	http-request set-header X-Forwarded-Proto https
         default_backend sharabash.tech-backend
 
